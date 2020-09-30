@@ -48,3 +48,14 @@ data_affairs <-read.csv("./Affairs.csv")
 object.size(data_affairs)/10000
 
 
+
+
+
+
+x <- 3L # crée la valeur 3, de type entier,
+
+object.size(x)
+# ce qui est équivalent à:
+x <- as.integer(3)
+object.size(x)
+&x
