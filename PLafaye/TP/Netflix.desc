@@ -1,0 +1,6 @@
+new("big.matrix.descriptor", description = list(sharedType = "FileBacked", 
+    filename = "Netflix.bin", dirname = "/Users/emmanuelpellegrin/git/MIASHS/M2/M2-fouille-donn-es/PLafaye/TP/", 
+    totalRows = 100480507L, totalCols = 5L, rowOffset = c(0, 
+    100480507), colOffset = c(0, 5), nrow = 100480507, ncol = 5, 
+    rowNames = NULL, colNames = c("movie", "customer", "rating", 
+    "year", "month"), type = "integer", separated = FALSE))
