@@ -1,0 +1,113 @@
+# EXAMEN V3EMI5 - Partie de P. Lafaye De Micheaux
+
+**Temps total prévu : 45 minutes**
+
+** INDIQUER VOS NOM, PRÉNOM ET NUMÉRO D'ETUDIANT CI-DESSOUS**
+
+```{r}
+nom <- ""
+prenom <- ""
+numero.etudiant <- ""
+```
+
+Un gros fichier de données nommé `mybigfile.csv` (non fourni) contient $N=10~000$ lignes. Chaque ligne contient  $p=250$ entrées, toutes séparées par des virgules ','. Chaque entrée est un nombre entier, entre 0 et 9, qui code l'appartenance à 10 classes pour chacune des 250 variables d'intérêt (leur description n'est pas fournie ici).
+
+**NB:** Du fait des contraintes imposées par la crise COVID, j'ai opté pour travailler sur un jeu de données simulées plutôt que sur un gros jeu de données réelles afin d'éviter des difficultés de téléchargement et de manipulation depuis chez vous. Également, le nombre $N$ de lignes du fichier est délibérément fixé à une valeur faible. 
+
+1. Donner une formule permettant le calcul de la taille du fichier `mybigfile.csv` sur le disque en fonction de $N$ et $p$? Utiliser cette formule pour calculer, en R, la taille effective de ce fichier. Vous l'exprimerez dans l'unité qui vous paraît la plus adaptée.
+
+**Votre formule ici:** $f(N,p) = $
+
+```{r, label="Q1"}
+taille.fichier <- NA # en ... (DONNER L'UNITÉ UTILISÉE)
+```
+
+
+2. Donner un code R utilisant la fonction `cat()` et permettant de créer un tel fichier. Les différentes entrées seront générées aléatoirement. Aucune variable R ne devra être créée. Vous utiliserez l'instruction `set.seed(1)` juste avant de créer la première ligne pour que tout le monde ait le même fichier à la fin. Vous incluerez une instruction permettant de mesurer le temps (en secondes) que prend votre code pour s'exécuter.
+
+```{r, label="Q2"}
+# Votre code ici utilisant la fonction cat():
+set.seed(1)
+
+```
+
+**L'écriture du fichier a pris xxx secondes.**
+
+
+3. Créer effectivement ce fichier. Vérifier sa taille sur le disque (rappel: il s'agit d'un fichier CSV, pour Comma Separated Values). Si elle est exprimée dans la même unité que celle que vous avez utilisée à la question 1), exprimez la dans une autre unité de votre choix.
+
+**La taille du fichier est de:** ... (DONNER L'UNITÉ)
+
+4. Proposer une stratégie pour diminuer la taille de ce fichier tout en conservant la même information. Donner le code R correspondant.
+
+**Voilà le code pour ma stratégie:**
+
+```{r, label="Q4"}
+# Votre code ici:
+
+```
+
+
+5. Proposer un code R utilisant la fonction `write.table()` qui sera plus rapide pour créer le fichier de la question 3). Vous incluerez une instruction permettant de mesurer le temps (en secondes) que prend votre code pour s'exécuter. Quel est le gain en temps de calcul que vous obtenez par rapport à la question 2 ?
+
+```{r, label="Q5"}
+# Votre code ici utilisant write.table():
+
+```
+
+**L'écriture du fichier a pris xxx secondes cette fois-ci.**
+
+**Ce code est xxx fois plus rapide que celui de la question 2.**
+
+6. Donner un code R permettant de lire le contenu de ce fichier pour le stocker dans une matrice `X` de taille $N\times p$. Vous pouvez utiliser la fonction `scan()`.
+
+```{r, label="Q6"}
+# Votre code ici utilisant la fonction scan():
+X <- NA
+```
+
+
+7. Quelle est la taille (en octets) de l'objet `X` dans R. Est-elle différente de celle du fichier `mybigfile.csv` sur le disque? Pourquoi?
+
+**La taille (en octets) de l'objet `X` dans R est:
+
+```{r, label="Q7"}
+# Votre code ici:
+taille. X <- NA
+taille.X
+```
+
+**Mes explications:**
+
+8. Lire le fichier `mybigfile.csv` dans un objet au format `big.matrix` que vous appelerez `X.big`.
+
+```{r, label="Q8"}
+# Votre code ici:
+X.big <- NA
+```
+
+9. Afficher les 5 premières observations de la ligne 1750. Calculer la moyenne de toutes les $N$ valeurs de la 238ème variable.
+
+```{r, label="Q9"}
+# Votre code ici:
+
+```
+
+
+10. Utiliser la fonction `big.PCA()` du package `bigpca` pour tracer un graphe des 250 valeurs propres cumulées (rappel: valeur propre = carré de valeur singulière). Qu'observez-vous? Pouvait-on s'y attendre?
+
+```{r, label="Q10"}
+# Votre code ici:
+
+```
+
+**Mes observations et explications:**
+
+**Question bonus:** créer un nouveau fichier de données de la même taille que `mybigfile.csv` de telle manière que la somme des 10 premières valeurs propres soit égale à 250.
+
+
+```{r, label="Qbonus"}
+# Votre code pour la question bonus ici:
+
+```
+

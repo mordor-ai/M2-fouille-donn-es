@@ -1,0 +1,5 @@
+new("big.matrix.descriptor", description = list(sharedType = "FileBacked", 
+    filename = "mybigfile.bin", dirname = "C:/Users/EPELLEGRIN/Documents/GitHub/M2-fouille-donn-es/examen/", 
+    totalRows = 814L, totalCols = 12L, rowOffset = c(0, 814), 
+    colOffset = c(0, 12), nrow = 814, ncol = 12, rowNames = NULL, 
+    colNames = NULL, type = "double", separated = FALSE))

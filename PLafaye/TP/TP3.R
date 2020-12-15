@@ -42,6 +42,20 @@ dataX
 tail(dataX, 1)
 max(dataX[,])
 
+#2.3 Fonction mwhich
+#- Fournit une sélection efficace de lignes pour des objets matrix et big.matrix and matrix
+#- Basée sur la fonction R `which()` sans débordement de mémoire
+#mwhich(x, cols, vals, comps, op = ‘AND’)
+#- x: cols: vals:
+#- un objet big.matrix.
+#Traiter des big data en R avec le package bigmemory
+#- un vecteur d'indices de colonne ou de noms.
+#- une liste de vecteurs de longueurs 1 ou 2; longueur 1: utilisé pour tester l'égalité (ou l'inegalité),
+#- comps: une liste d'opérateurs incluant 'eq', 'neq', 'le', 'lt', 'ge' et 'gt‘. op: soit 'AND' ou 'OR'.
+#Quelle est la signification du code suivant?
+
+
+
 indices <- mwhich(dataX, 1, -0.66469, "le") 
 length(indices)
 ## [1] 750

@@ -134,3 +134,8 @@ TP_NOTE/dataset.netflow.zip
 .DS_Store
 *.bin
 .DS_Store
+**/.Rhistory
+**/.RData
+**/.Rhistory
+.idea/.name
+**/.DS_Store
